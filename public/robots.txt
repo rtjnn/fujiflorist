@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://fujiflorist.online
+
+# Sitemaps
+Sitemap: https://fujiflorist.online/sitemap.xml
