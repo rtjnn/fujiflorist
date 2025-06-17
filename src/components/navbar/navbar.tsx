@@ -179,9 +179,9 @@ export default function Navbar() {
               </button>
             </form>
 
-            <a href="#" className="block text-[#2D2D2D] font-medium">
+            <Link href="#" className="block text-[#2D2D2D] font-medium">
               NEW ARRIVAL
-            </a>
+            </Link>
             {navItems.map(({ name, section }) => (
               <div key={section}>
                 <button
@@ -199,9 +199,9 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <a href="#" className="block text-[#2D2D2D] font-medium">
+            <Link href="#" className="block text-[#2D2D2D] font-medium">
               LOCATIONS
-            </a>
+            </Link>
           </div>
         )}
       </nav>

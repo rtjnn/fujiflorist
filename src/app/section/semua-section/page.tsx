@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import produkList from '@/data/produk.json';
+import Image from 'next/image';
 
 export default function SemuaSection() {
   const initialCount = 8;
@@ -34,7 +35,9 @@ export default function SemuaSection() {
               rel="noopener noreferrer"
               className="block bg-white shadow-md rounded-xl overflow-hidden transition-transform duration-200 hover:scale-105"
             >
-              <img
+              <Image
+                width={300}
+                height={300}
                 src={produk.gambar}
                 alt={produk.nama}
                 className="w-full h-48 object-cover"

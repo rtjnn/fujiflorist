@@ -6,6 +6,8 @@ slug: string;
 
 import produkList from '@/data/produk.json';
 import { ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page({ params }: PageProps) {
 const { slug } = params;
@@ -39,7 +41,7 @@ return (
         <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-4">
             <div className="text-sm text-gray-500">
                 <nav className="flex items-center space-x-1" aria-label="Breadcrumb">
-                    <a href="/" className="hover:underline text-[#D88FA2] font-medium">Home</a>
+                    <Link href="/" className="hover:underline text-[#D88FA2] font-medium">Home</Link>
                     <span><ChevronRight /></span>
                     <span className=" text-[#D88FA2] font-medium cursor-default">Kategori</span>
                     <span><ChevronRight /></span>
@@ -61,7 +63,7 @@ return (
                 <div key={index}
                     className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
                     <div className="relative">
-                        <img src={produk.gambar} alt={produk.nama}
+                        <Image width={300} height={300} src={produk.gambar} alt={produk.nama}
                             className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" />
                         <span
                             className="absolute top-2 left-2 bg-[#D88FA2] text-white text-xs font-semibold px-3 py-1 rounded-full capitalize">

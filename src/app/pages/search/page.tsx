@@ -4,6 +4,8 @@ import { useSearchParams } from 'next/navigation';
 import produkList from '@/data/produk.json';
 import { useMemo } from 'react';
 import { ChevronRight } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -23,7 +25,7 @@ export default function Page() {
            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-4">
             <div className="text-sm text-gray-500">
                 <nav className="flex items-center space-x-1" aria-label="Breadcrumb">
-                    <a href="/" className="hover:underline text-[#D88FA2] font-medium">Home</a>
+                    <Link href="/" className="hover:underline text-[#D88FA2] font-medium">Home</Link>
                     <span><ChevronRight /></span>
                     <span className=" text-[#D88FA2] font-medium cursor-default">Hasil Pencarian</span>
                     <span><ChevronRight /></span>
@@ -46,7 +48,9 @@ export default function Page() {
               className="block bg-white shadow-md rounded-xl overflow-hidden transition-transform duration-200 hover:scale-105"
             >
               <div key={index} className="bg-white border rounded-xl shadow-sm overflow-hidden">
-                <img
+                <Image
+                width={300}
+                height={200}
                   src={produk.gambar}
                   alt={produk.nama}
                   className="w-full h-48 object-cover"

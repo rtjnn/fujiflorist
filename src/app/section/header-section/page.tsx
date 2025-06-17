@@ -1,8 +1,12 @@
+import Image from "next/image";
+
 export default function HeaderSection() {
   return (
     <div className="relative isolate overflow-hidden bg-[#C46A82] py-24 sm:py-32">
       {/* Background Image */}
-      <img
+      <Image
+        width={300}
+        height={300}
         src="gambar/bunga.jpg"
         alt="Bunga berkualitas"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-center"

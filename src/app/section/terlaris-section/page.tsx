@@ -1,4 +1,5 @@
 import produkList from '@/data/produk.json';
+import Image from 'next/image';
 
 export default function TerlarisSection() {
   const produkTerbaru = produkList.slice(-4); // Ambil 4 produk paling akhir
@@ -15,7 +16,9 @@ export default function TerlarisSection() {
               className="bg-white rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
             >
               <div className="overflow-hidden">
-                <img
+                <Image
+                  width={300}
+                  height={300}
                   src={produk.gambar}
                   alt={produk.nama}
                   className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"

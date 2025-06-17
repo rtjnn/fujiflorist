@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function FooterSection() {
@@ -109,18 +110,18 @@ export default function FooterSection() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0">
           <p className="text-gray-500 text-sm">&copy; 2024 Toko Bunga Zildan. All rights reserved.</p>
           <div className="flex space-x-4 text-gray-500">
-            <a href="#" className="hover:text-[#D88FA2]">
+            <Link href="#" className="hover:text-[#D88FA2]">
               <i className="bi bi-facebook"></i>
-            </a>
-            <a href="#" className="hover:text-[#D88FA2]">
+            </Link>
+            <Link href="#" className="hover:text-[#D88FA2]">
               <i className="bi bi-instagram"></i>
-            </a>
-            <a href="#" className="hover:text-[#D88FA2]">
+            </Link>
+            <Link href="#" className="hover:text-[#D88FA2]">
               <i className="bi bi-twitter"></i>
-            </a>
-            <a href="#" className="hover:text-red-600">
+            </Link>
+            <Link href="#" className="hover:text-red-600">
               <i className="bi bi-youtube"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

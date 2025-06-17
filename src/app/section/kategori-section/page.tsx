@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import kategoriList from '@/data/kategori.json';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const categories = kategoriList;
 
@@ -22,7 +23,9 @@ export default function KategoriSection() {
             className="flex flex-col items-center justify-center transition-transform duration-200 hover:scale-105"
           >
             <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#D88FA2]">
-              <img
+              <Image
+              width={300}
+              height={300}
                 src={cat.gambar}
                 alt={`Gambar kategori ${cat.nama}`}
                 className="object-cover w-full h-full"
