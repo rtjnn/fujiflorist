@@ -12,8 +12,8 @@ export default function KategoriSection() {
   const visibleCategories = showAll ? categories : categories.slice(0, 8);
 
   return (
-    <section className="py-10 bg-white text-center font-sans">
-      <h2 className="text-2xl font-bold mb-6 text-[#D88FA2]">SHOP BY CATEGORY</h2>
+    <section className=" py-10 bg-white text-center font-sans">
+      <h2 className="text-2xl font-bold mb-6 text-[#D88FA2]">KATEGORI TOKO KAMI</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 px-4 sm:px-6 lg:px-10 max-w-5xl mx-auto">
         {visibleCategories.map((cat) => (

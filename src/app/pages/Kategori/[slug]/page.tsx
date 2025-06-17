@@ -35,7 +35,7 @@ export default async function Page({ params }: PageProps) {
     <section className="relative min-h-screen pt-32 pb-12 bg-white animate-fade-in-up">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
-        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-4">
+        <div className="bg-white border border-[#D88FA2] rounded-lg shadow-sm p-4 mb-4">
           <div className="text-sm text-gray-500">
             <nav className="flex items-center space-x-1" aria-label="Breadcrumb">
               <Link href="/" className="hover:underline text-[#D88FA2] font-medium">Home</Link>

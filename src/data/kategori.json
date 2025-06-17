@@ -2,17 +2,17 @@
   {
     "id": 1,
     "nama": "bunga tangan",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/1.jpg"
   },
   {
     "id": 2,
     "nama": "buket bunga",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/2.jpg"
   },
   {
     "id": 3,
     "nama": "bunga meja",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/3.jpg"
   },
   {
     "id": 4,
@@ -22,37 +22,36 @@
   {
     "id": 5,
     "nama": "parcel bunga",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/5.jpg"
   },
   {
     "id": 6,
     "nama": "parcel buah",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/6.jpg"
   },
   {
     "id": 7,
     "nama": "ulang tahun",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/7.jpg"
   },
   {
     "id": 8,
     "nama": "pernikahan",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/8.jpg"
   },
   {
     "id": 9,
     "nama": "duka cita",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/9.jpg"
   },
   {
     "id": 10,
     "nama": "graduation",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/10.jpg"
   },
   {
     "id": 11,
     "nama": "pembukaan",
-    "gambar": "/gambar-kategori/4.jpg"
+    "gambar": "/gambar-kategori/11.jpg"
   }
-
 ]

@@ -7,22 +7,48 @@ import Image from 'next/image';
 export default function SemuaSection() {
   const initialCount = 8;
   const [visibleCount, setVisibleCount] = useState(initialCount);
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
   const handleToggle = () => {
     if (visibleCount >= produkList.length) {
-      setVisibleCount(initialCount); // reset ke 8
+      setVisibleCount(initialCount);
     } else {
       setVisibleCount((prev) => prev + 8);
     }
   };
 
-  const visibleProducts = produkList.slice(0, visibleCount);
+  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSortOrder(e.target.value as 'asc' | 'desc');
+  };
+
+  // Urutkan produk berdasarkan harga
+  const sortedProducts = [...produkList].sort((a, b) => {
+    const hargaA = Number(a.harga);
+    const hargaB = Number(b.harga);
+    return sortOrder === 'asc' ? hargaA - hargaB : hargaB - hargaA;
+  });
+
+  const visibleProducts = sortedProducts.slice(0, visibleCount);
   const isAllVisible = visibleCount >= produkList.length;
 
   return (
     <section className="py-10 font-sans bg-[#fffafa]">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl font-bold mb-6 text-[#D88FA2]">Produk Kami</h2>
+        <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
+          <h2 className="text-2xl font-bold text-[#D88FA2]">Produk Kami</h2>
+          <div className="flex items-center gap-2">
+            <label htmlFor="sort" className="text-sm text-gray-700">Urutkan:</label>
+            <select
+              id="sort"
+              value={sortOrder}
+              onChange={handleSortChange}
+              className="text-sm border border-gray-300 rounded px-2 py-1"
+            >
+              <option value="asc">Harga Termurah</option>
+              <option value="desc">Harga Termahal</option>
+            </select>
+          </div>
+        </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {visibleProducts.map((produk, index) => (

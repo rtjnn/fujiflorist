@@ -3,6 +3,8 @@ import TerlarisSection from "./section/terlaris-section/page";
 import KategoriSection from "./section/kategori-section/page";
 import SemuaSection from "./section/semua-section/page";
 import FooterSection from "./section/footer-section/page";
+import TentangSection from "./section/tentang-section/page";
+
 
 export default function Home() {
   return (
@@ -16,6 +18,10 @@ export default function Home() {
         {/* Section Terlaris */}
         <section>
           <TerlarisSection />
+        </section>
+
+        <section>
+          <TentangSection/>
         </section>
 
         {/* Section Kategori */}

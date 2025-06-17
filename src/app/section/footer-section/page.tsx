@@ -1,7 +1,15 @@
+'use client';
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function FooterSection() {
+  const [openItem, setOpenItem] = useState<string | null>(null);
+
+  const toggleItem = (key: string) => {
+    setOpenItem(openItem === key ? null : key);
+  };
+
   return (
     <footer className="text-gray-900 pt-5 pb-3 bg-white">
       <div className="container mx-auto px-4">
@@ -9,37 +17,53 @@ export default function FooterSection() {
           {/* Bantuan */}
           <div className="w-full md:w-4/12 px-4 mb-6 md:mb-0">
             <h6 className="font-semibold mb-4 text-[#D88FA2]">Bantuan</h6>
+            <div className="space-y-2 text-sm text-gray-700">
 
-            <div className="space-y-4 text-gray-600 text-sm">
-              <div>
-                <h6 className="font-semibold mb-1">FAQ</h6>
-                <p>Jawaban dari FAQ atau informasi yang relevan.</p>
-              </div>
-
-              <div>
-                <h6 className="font-semibold mb-1">Cara Order</h6>
-                <p>Pilih Produk yang akan anda beli lalu masukan keranjang dan masuk halaman pembayaran.</p>
-              </div>
-
-              <div>
-                <h6 className="font-semibold mb-1">Pembayaran</h6>
-                <ul className="pl-4 list-disc space-y-1 text-gray-700">
-                  <li>
-                    <strong>Transfer Bank:</strong> Anda bisa melakukan pembayaran melalui ATM, mobile banking, atau internet banking ke rekening Mandiri, BCA, atau BNI.
-                  </li>
-                  <li>
-                    <strong>COD (Bayar di Tempat):</strong> Nikmati kemudahan berbelanja dan bayar saat barang diterima di rumah Anda.
-                  </li>
-                  <li>
-                    <strong>QRIS:</strong> Cukup scan QR code dari aplikasi dompet digital (OVO, DANA, Gopay, dll) untuk membayar dengan cepat dan aman.
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h6 className="font-semibold mb-1">Pengiriman</h6>
-                <p>Pengiriman sesuai estimasi yang telah ditentukan bersama.</p>
-              </div>
+              {/* Item Accordion */}
+              {[
+                {
+                  key: "faq",
+                  title: "FAQ",
+                  content: "Kami telah berdiri lebih dari 10 tahun dan telah melayani 100++ customer.",
+                },
+                {
+                  key: "cara-order",
+                  title: "Cara Order",
+                  content:
+                    "Klik produk yang akan kamu beli lalu akan otomatis diarahkan menuju whatsapp admin kami..",
+                },
+                {
+                  key: "pembayaran",
+                  title: "Pembayaran",
+                  content: (
+                    <ul className="pl-4 list-disc space-y-1">
+                      <li><strong>Transfer Bank:</strong> melalui ATM, mobile banking, atau internet banking ke Mandiri, BCA, BNI.</li>
+                      <li><strong>COD:</strong> Bayar saat barang diterima di rumah.</li>
+                      <li><strong>QRIS:</strong> Scan QR code dari OVO, DANA, Gopay, dll.</li>
+                    </ul>
+                  ),
+                },
+                {
+                  key: "pengiriman",
+                  title: "Pengiriman",
+                  content: "Pengiriman sesuai estimasi yang telah ditentukan bersama.",
+                },
+              ].map((item) => (
+                <div key={item.key} className="border-b py-2">
+                  <button
+                    onClick={() => toggleItem(item.key)}
+                    className="flex justify-between items-center w-full font-semibold text-left text-gray-800"
+                  >
+                    {item.title}
+                    <span className="text-xl">{openItem === item.key ? '−' : '+'}</span>
+                  </button>
+                  {openItem === item.key && (
+                    <div className="mt-2 text-sm text-gray-600">
+                      {item.content}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
 
@@ -97,7 +121,7 @@ export default function FooterSection() {
             />
             <button
               type="submit"
-              className="flex-none rounded-md bg-[#D88FA2] hover:bg-[#c6778f] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#D88FA2]"
+              className="flex-none rounded-md bg-[#D88FA2] hover:bg-[#c6778f] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
             >
               Subscribe
             </button>
@@ -108,7 +132,7 @@ export default function FooterSection() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-0">
-          <p className="text-gray-500 text-sm">&copy; 2024 Toko Bunga Zildan. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">&copy; 2024 Fuji Florist. All rights reserved.</p>
           <div className="flex space-x-4 text-gray-500">
             <Link href="#" className="hover:text-[#D88FA2]">
               <i className="bi bi-facebook"></i>

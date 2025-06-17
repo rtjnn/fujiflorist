@@ -21,7 +21,7 @@ export default function SearchClient() {
     <section className="relative min-h-screen pt-32 pb-12 bg-white animate-fade-in-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-4">
+          <div className="bg-white border border-[#D88FA2] rounded-lg shadow-sm p-4 mb-4">
             <div className="text-sm text-gray-500">
               <nav className="flex items-center space-x-1" aria-label="Breadcrumb">
                 <Link href="/" className="hover:underline text-[#D88FA2] font-medium">Home</Link>
@@ -46,7 +46,7 @@ export default function SearchClient() {
                 rel="noopener noreferrer"
                 className="block bg-white shadow-md rounded-xl overflow-hidden transition-transform duration-200 hover:scale-105"
               >
-                <div className="bg-white border rounded-xl shadow-sm overflow-hidden">
+                <div className="bg-white  rounded-xl shadow-sm overflow-hidden">
                   <Image
                     width={300}
                     height={200}
