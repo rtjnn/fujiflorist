@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nama": "bunga tangan",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 2,
+    "nama": "buket bunga",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 3,
+    "nama": "bunga meja",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 4,
+    "nama": "bunga standing",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 5,
+    "nama": "parcel bunga",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 6,
+    "nama": "parcel buah",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 7,
+    "nama": "ulang tahun",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 8,
+    "nama": "pernikahan",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 9,
+    "nama": "duka cita",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 10,
+    "nama": "graduation",
+    "gambar": "https://placehold.co/600x400"
+  },
+  {
+    "id": 11,
+    "nama": "pembukaan",
+    "gambar": "https://placehold.co/600x400"
+  }
+
+]

@@ -1,0 +1,135 @@
+[
+{
+"nama": "Buket Mawar Merah",
+"kategori": "buket bunga",
+"harga": 250000,
+"gambar": "/gambar-produk/buketbungamerahjpg.jpg"
+},
+
+{
+"nama": "Hand Bouquet Mawar Pink",
+"kategori": "buket bunga",
+"harga": 200000,
+"gambar": "/gambar-produk/buketbungapink.jpg"
+},
+{
+"nama": "Bunga Meja Elegan",
+"kategori": "bunga meja",
+"harga": 275000,
+"gambar": "/gambar-produk/bungamejaelegan.jpg"
+},
+{
+"nama": "Box Bunga Segar",
+"kategori": "bunga meja",
+"harga": 290000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Standing Flower Lily",
+"kategori": "bunga standing",
+"harga": 450000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Bunga Standing Elegan",
+"kategori": "bunga standing",
+"harga": 550000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Forever Flower Premium Box",
+"kategori": "parcel bunga",
+"harga": 320000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Parcel Bunga dan Cokelat",
+"kategori": "parcel bunga",
+"harga": 350000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Chocolate Gift Box",
+"kategori": "parcel buah",
+"harga": 180000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Parcel Buah Premium",
+"kategori": "parcel buah",
+"harga": 420000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Ulang Tahun Ceria",
+"kategori": "ulang tahun",
+"harga": 450000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Ulang Tahun Spesial",
+"kategori": "ulang tahun",
+"harga": 370000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Pernikahan Elegan",
+"kategori": "pernikahan",
+"harga": 950000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Pernikahan Premium",
+"kategori": "pernikahan",
+"harga": 1050000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Duka Cita Mawar Putih",
+"kategori": "duka cita",
+"harga": 700000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Duka Cita Hitam Emas",
+"kategori": "duka cita",
+"harga": 800000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Graduation Bloom Box",
+"kategori": "graduation",
+"harga": 230000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Buket Wisuda Spesial",
+"kategori": "graduation",
+"harga": 280000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Pembukaan Bisnis Baru",
+"kategori": "pembukaan",
+"harga": 675000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Papan Bunga Grand Opening",
+"kategori": "pembukaan",
+"harga": 720000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Bouquet Bunga dan Buah",
+"kategori": "bunga buah",
+"harga": 390000,
+"gambar": "https://placehold.co/600x400"
+},
+{
+"nama": "Box Bunga Buah Premium",
+"kategori": "bunga buah",
+"harga": 470000,
+"gambar": "https://placehold.co/600x400"
+}
+]
