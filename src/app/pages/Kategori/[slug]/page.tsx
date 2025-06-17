@@ -3,8 +3,12 @@ import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+interface PageProps {
+  params: Promise<{ slug: string }>; // karena async
+}
+
+export default async function Page({ params }: PageProps) {
+  const { slug } = await params;
   const kategoriName = decodeURIComponent(slug.replace(/-/g, ' ')).toLowerCase();
 
   let produkTerkait = [];
@@ -30,7 +34,6 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <section className="relative min-h-screen pt-32 pb-12 bg-white animate-fade-in-up">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Breadcrumb */}
         <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-4">
           <div className="text-sm text-gray-500">
@@ -48,7 +51,7 @@ export default function Page({ params }: { params: { slug: string } }) {
         {produkTerkait.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {produkTerkait.map((produk, index) => (
-              <a
+              <Link
                 key={`${produk.nama}-${index}`}
                 href={`https://api.whatsapp.com/send/?phone=6285722069952&text=${encodeURIComponent(`Halo saya tertarik dengan produk "${produk.nama}"`)}`}
                 target="_blank"
@@ -80,7 +83,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                     </p>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         ) : (

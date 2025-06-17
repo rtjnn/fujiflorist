@@ -7,7 +7,7 @@ export default function HeaderSection() {
       <Image
         width={300}
         height={300}
-        src="gambar/bunga.jpg"
+        src="/gambar/bunga.jpg"
         alt="Bunga berkualitas"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
       />
