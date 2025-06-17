@@ -199,9 +199,6 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <Link href="#" className="block text-[#2D2D2D] font-medium">
-              LOCATIONS
-            </Link>
           </div>
         )}
       </nav>

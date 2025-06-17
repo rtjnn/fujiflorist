@@ -56,11 +56,15 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Fixed Navbar */}
         <div className="fixed top-0 left-0 w-full h-16 bg-white z-50 shadow-md">
           <Navbar />
         </div>
-        {children}
+
+        {/* Konten utama dikasih padding-top agar tidak tertabrak */}
+        <div className="pt-16">{children}</div>
       </body>
     </html>
   );
 }
+

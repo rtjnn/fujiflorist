@@ -1,135 +1,156 @@
 [
-{
-"nama": "Buket Mawar Merah",
-"kategori": "buket bunga",
-"harga": 250000,
-"gambar": "/gambar-produk/buketbungamerahjpg.jpg"
-},
-
-{
-"nama": "Hand Bouquet Mawar Pink",
-"kategori": "buket bunga",
-"harga": 200000,
-"gambar": "/gambar-produk/buketbungapink.jpg"
-},
-{
-"nama": "Bunga Meja Elegan",
-"kategori": "bunga meja",
-"harga": 275000,
-"gambar": "/gambar-produk/bungamejaelegan.jpg"
-},
-{
-"nama": "Box Bunga Segar",
-"kategori": "bunga meja",
-"harga": 290000,
-"gambar": "/gambar-produk/4.jpg"
-},
-{
-"nama": "Standing Flower Lily",
-"kategori": "bunga standing",
-"harga": 450000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Bunga Standing Elegan",
-"kategori": "bunga standing",
-"harga": 550000,
-"gambar": "/gambar-produk/6.jpg"
-},
-{
-"nama": "Forever Flower Premium Box",
-"kategori": "parcel bunga",
-"harga": 320000,
-"gambar": "/gambar-produk/7.jpg"
-},
-{
-"nama": "Parcel Bunga dan Cokelat",
-"kategori": "parcel bunga",
-"harga": 350000,
-"gambar": "/gambar-produk/8.jpg"
-},
-{
-"nama": "Chocolate Gift Box",
-"kategori": "parcel buah",
-"harga": 180000,
-"gambar": "/gambar-produk/9.jpg"
-},
-{
-"nama": "Parcel Buah Premium",
-"kategori": "parcel buah",
-"harga": 420000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Ulang Tahun Ceria",
-"kategori": "ulang tahun",
-"harga": 450000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Ulang Tahun Spesial",
-"kategori": "ulang tahun",
-"harga": 370000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Pernikahan Elegan",
-"kategori": "pernikahan",
-"harga": 950000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Pernikahan Premium",
-"kategori": "pernikahan",
-"harga": 1050000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Duka Cita Mawar Putih",
-"kategori": "duka cita",
-"harga": 700000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Duka Cita Hitam Emas",
-"kategori": "duka cita",
-"harga": 800000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Graduation Bloom Box",
-"kategori": "graduation",
-"harga": 230000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Buket Wisuda Spesial",
-"kategori": "graduation",
-"harga": 280000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Pembukaan Bisnis Baru",
-"kategori": "pembukaan",
-"harga": 675000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Papan Bunga Grand Opening",
-"kategori": "pembukaan",
-"harga": 720000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Bouquet Bunga dan Buah",
-"kategori": "bunga buah",
-"harga": 390000,
-"gambar": "/gambar-produk/5.jpg"
-},
-{
-"nama": "Box Bunga Buah Premium",
-"kategori": "bunga buah",
-"harga": 470000,
-"gambar": "/gambar-produk/5.jpg"
-}
+  {
+    "id": 1,
+    "nama": "Buket Mawar Merah",
+    "kategori": "buket bunga",
+    "harga": 250000,
+    "gambar": "/gambar-produk/1.jpg"
+  },
+  {
+    "id": 2,
+    "nama": "Hand Bouquet Mawar Pink",
+    "kategori": "buket bunga",
+    "harga": 200000,
+    "gambar": "/gambar-produk/2.jpg"
+  },
+  {
+    "id": 3,
+    "nama": "Bunga Meja Elegan",
+    "kategori": "bunga meja",
+    "harga": 275000,
+    "gambar": "/gambar-produk/3.jpg"
+  },
+  {
+    "id": 4,
+    "nama": "Box Bunga Segar",
+    "kategori": "bunga meja",
+    "harga": 290000,
+    "gambar": "/gambar-produk/4.jpg"
+  },
+  {
+    "id": 5,
+    "nama": "Standing Flower Lily",
+    "kategori": "bunga standing",
+    "harga": 450000,
+    "gambar": "/gambar-produk/5.jpg"
+  },
+  {
+    "id": 6,
+    "nama": "Bunga Standing Elegan",
+    "kategori": "bunga standing",
+    "harga": 550000,
+    "gambar": "/gambar-produk/6.jpg"
+  },
+  {
+    "id": 7,
+    "nama": "Forever Flower Premium Box",
+    "kategori": "parcel bunga",
+    "harga": 320000,
+    "gambar": "/gambar-produk/7.jpg"
+  },
+  {
+    "id": 8,
+    "nama": "Parcel Bunga dan Cokelat",
+    "kategori": "parcel bunga",
+    "harga": 350000,
+    "gambar": "/gambar-produk/8.jpg"
+  },
+  {
+    "id": 9,
+    "nama": "Chocolate Gift Box",
+    "kategori": "parcel buah",
+    "harga": 180000,
+    "gambar": "/gambar-produk/9.jpg"
+  },
+  {
+    "id": 10,
+    "nama": "Parcel Buah Premium",
+    "kategori": "parcel buah",
+    "harga": 420000,
+    "gambar": "/gambar-produk/10.jpg"
+  },
+  {
+    "id": 11,
+    "nama": "Papan Ulang Tahun Ceria",
+    "kategori": "ulang tahun",
+    "harga": 450000,
+    "gambar": "/gambar-produk/11.jpg"
+  },
+  {
+    "id": 12,
+    "nama": "Papan Ulang Tahun Spesial",
+    "kategori": "ulang tahun",
+    "harga": 370000,
+    "gambar": "/gambar-produk/12.jpg"
+  },
+  {
+    "id": 13,
+    "nama": "Papan Pernikahan Elegan",
+    "kategori": "pernikahan",
+    "harga": 950000,
+    "gambar": "/gambar-produk/13.jpg"
+  },
+  {
+    "id": 14,
+    "nama": "Papan Pernikahan Premium",
+    "kategori": "pernikahan",
+    "harga": 1050000,
+    "gambar": "/gambar-produk/14.jpg"
+  },
+  {
+    "id": 15,
+    "nama": "Papan Duka Cita Mawar Putih",
+    "kategori": "duka cita",
+    "harga": 700000,
+    "gambar": "/gambar-produk/15.jpg"
+  },
+  {
+    "id": 16,
+    "nama": "Papan Duka Cita Hitam Emas",
+    "kategori": "duka cita",
+    "harga": 800000,
+    "gambar": "/gambar-produk/16.jpg"
+  },
+  {
+    "id": 17,
+    "nama": "Graduation Bloom Box",
+    "kategori": "graduation",
+    "harga": 230000,
+    "gambar": "/gambar-produk/17.jpg"
+  },
+  {
+    "id": 18,
+    "nama": "Buket Wisuda Spesial",
+    "kategori": "graduation",
+    "harga": 280000,
+    "gambar": "/gambar-produk/18.jpg"
+  },
+  {
+    "id": 19,
+    "nama": "Papan Pembukaan Bisnis Baru",
+    "kategori": "pembukaan",
+    "harga": 675000,
+    "gambar": "/gambar-produk/19.jpg"
+  },
+  {
+    "id": 20,
+    "nama": "Papan Bunga Grand Opening",
+    "kategori": "pembukaan",
+    "harga": 720000,
+    "gambar": "/gambar-produk/20.jpg"
+  },
+  {
+    "id": 21,
+    "nama": "Bouquet Bunga dan Buah",
+    "kategori": "bunga buah",
+    "harga": 390000,
+    "gambar": "/gambar-produk/21.jpg"
+  },
+  {
+    "id": 22,
+    "nama": "Box Bunga Buah Premium",
+    "kategori": "bunga buah",
+    "harga": 470000,
+    "gambar": "/gambar-produk/22.jpg"
+  }
 ]

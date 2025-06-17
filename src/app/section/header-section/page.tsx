@@ -5,8 +5,8 @@ export default function HeaderSection() {
     <div className="relative isolate overflow-hidden bg-[#C46A82] py-24 sm:py-32">
       {/* Background Image */}
       <Image
-        width={300}
-        height={300}
+        width={1500}
+        height={1500}
         src="/gambar/bunga.jpg"
         alt="Bunga berkualitas"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
